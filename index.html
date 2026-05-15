@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mary Strong — Designer</title>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Cormorant+Garamond:ital,wght@1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="#hero" class="nav-logo">Mary Strong</a>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+<!-- ════════════════════════════════════
+     SECTION 1 — HERO
+════════════════════════════════════ -->
+<section id="hero">
+
+  <!-- ── SUB 1: WARNING ── -->
+  <div class="hero-warning">
+
+    <!-- tape strips background -->
+    <div class="warning-tapes" aria-hidden="true">
+      <div class="tape tape-1"><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span></div>
+      <div class="tape tape-2"><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span></div>
+      <div class="tape tape-3"><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span></div>
+      <div class="tape tape-4"><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span></div>
+      <div class="tape tape-5"><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span><span>WARNING</span></div>
+    </div>
+
+    <!-- stamp label on top -->
+    <div class="warning-stamp" data-anim="slam">
+      <p class="hero-eyebrow">Mary Strong &mdash; Designer &amp; Creative</p>
+      <h1>BEWARE &amp;<br>WARNING!</h1>
+      <h2 data-anim="fade-up" data-delay="2">This portfolio is different from other portfolios.</h2>
+      <h3 data-anim="fade-up" data-delay="3">You and YOU ALONE are in charge of what happens next. There are dangers (well, not really, but roll with it), choices, adventures, and consequences. YOU must use all of your numerous talents and much of your enormous intelligence. The wrong decision could end in disaster — even death (again, not really, but let's <em>pretend</em> it could). But don't despair. YOU can go back and make another choice, alter the path of your story, and change its result.</h3>
+    </div>
+
+  </div>
+
+  <!-- ── SUB 2: STORY + BOX + CHOICES ── -->
+  <div class="hero-story-section-wrap">
+  <div class="hero-story-section">
+
+    <div class="hero-story-text">
+      <p class="hero-story">
+        You're in the middle of reviewing resumes. Everything is starting to all look the same, and you wonder if your search is ever going to end. There's not enough coffee in the world to help you at this point. As you glance around your desk forlornly, wondering if it's too late to change careers, you notice a mysterious box sitting on your desk. Where on earth did this come from?
+      </p>
+      <div class="choices">
+        <p class="choice-label">What do you do?</p>
+        <a href="#box" class="choice-pill">Open the box →</a>
+        <a href="#about" class="choice-pill">Flip the box over to look for a sender →</a>
+        <a href="#contact" class="choice-pill">Stop the search →</a>
+        <button class="choice-pill" id="death-trigger">Ignore the box</button>
+      </div>
+    </div>
+
+    <div class="hero-story-right">
+      <!-- Small paper cutout box image -->
+      <a href="#box" class="hero-box-link" aria-label="Open the paper mystery box">
+        <div class="hero-box-wrap paper-box-wrap">
+          <img
+            class="hero-paper-box"
+            src="assets/box.png"
+            alt="Paper archival mystery box"
+          >
+        </div>
+      </a>
+    </div>
+
+  </div>
+  </div>
+<section id="box">
+  <!-- ─Box Interior ── -->
+  <!-- tall scroll container — sticky inner pins while lid opens -->
+  <div class="box-open-scroller" id="box-open-scroller">
+  <div class="hero-cards-section" id="hero-cards-section">
+    <!-- SVG box interior walls -->
+    <svg class="box-walls-svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="gl" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#020408"/>
+          <stop offset="100%" stop-color="#0c1e3a"/>
+        </linearGradient>
+        <linearGradient id="gr" x1="1" y1="0" x2="0" y2="0">
+          <stop offset="0%" stop-color="#020408"/>
+          <stop offset="100%" stop-color="#0c1e3a"/>
+        </linearGradient>
+        <linearGradient id="gt" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#010206"/>
+          <stop offset="100%" stop-color="#091828"/>
+        </linearGradient>
+        <linearGradient id="gf" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0%" stop-color="#0d2040"/>
+          <stop offset="100%" stop-color="#1a3a62"/>
+        </linearGradient>
+        <linearGradient id="gfl" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#020408" stop-opacity="1"/>
+          <stop offset="60%" stop-color="#020408" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+
+      <!-- left wall -->
+      <polygon points="0,0 10,12 10,88 0,100" fill="url(#gl)"/>
+      <!-- right wall -->
+      <polygon points="100,0 90,12 90,88 100,100" fill="url(#gr)"/>
+      <!-- ceiling -->
+      <polygon points="0,0 100,0 90,12 10,12" fill="url(#gt)"/>
+      <!-- floor base -->
+      <polygon points="0,100 10,88 90,88 100,100" fill="url(#gf)"/>
+      <!-- floor left shadow -->
+      <polygon points="0,100 10,88 90,88 100,100" fill="url(#gfl)"/>
+
+      <!-- crease lines -->
+      <line x1="10" y1="12" x2="10" y2="88" stroke="rgba(255,255,255,0.07)" stroke-width="0.4"/>
+      <line x1="90" y1="12" x2="90" y2="88" stroke="rgba(255,255,255,0.07)" stroke-width="0.4"/>
+      <line x1="10" y1="12" x2="90" y2="12" stroke="rgba(255,255,255,0.07)" stroke-width="0.4"/>
+      <line x1="10" y1="88" x2="90" y2="88" stroke="rgba(255,255,255,0.07)" stroke-width="0.4"/>
+    </svg>
+    <!-- parallax lid panels that open as you scroll in -->
+    <div class="box-lid-parallax" id="box-lid-parallax" aria-hidden="true">
+      <div class="lid-panel-left" id="lid-panel-left"></div>
+      <div class="lid-panel-right" id="lid-panel-right"></div>
+    </div>
+    <!-- scroll hint tooltip — floats above the closed lids -->
+    <div class="box-scroll-hint" id="box-scroll-hint" aria-hidden="true">
+      <div class="box-scroll-hint-bubble">Scroll to open the box</div>
+      <div class="box-scroll-hint-arrow">↓</div>
+    </div>
+    <div class="lid-glow" id="lid-glow"></div>
+    <div class="cards-scatter">
+      <div class="scatter-stage">
+
+      <!-- Open paper box image for the reveal scene -->
+      <img
+        class="hero-box-open-image"
+        src="assets/box/box-open.png"
+        alt="Open paper archival box"
+        loading="lazy"
+      >
+
+      <!-- ① SUNGLASSES -->
+<a href="#work" class="fan-card box-object paper-prop paper-prop-glasses card-in settled" style="--rot: -6deg; top: -8px; left: -68px; width: 300px; height: 185px; z-index: 6;">
+  <img src="assets/sunglasses.png" alt="Paper cutout sunglasses with wear me tag" loading="lazy">
+</a>
+
+      <!-- ② RUBBER DUCKY -->
+<div id="duck-trigger" class="fan-card duck-object paper-prop paper-prop-duck card-in settled" style="--rot: 32deg; top: 55px; right: 230px; width: 135px; height: 135px; z-index: 5;"
+  onmouseenter="this.querySelector('img').src='assets/ducky-red.png'"
+  onmouseleave="this.querySelector('img').src='assets/ducky.png'">
+  <img src="assets/paper-duck.png" alt="Paper cutout rubber duck" loading="lazy">
+</div>
+
+      <!-- ④ LITTLE BOOK -->
+<a href="#contact" class="fan-card book-object paper-prop paper-prop-book card-in settled" style="--rot: 18deg; top: 5px; right: -230px; width: 600px; height: 400px; z-index: 3;">
+  <img src="assets/book.png" alt="Paper cutout green book titled How to Fold a Paper Airplane" loading="lazy">
+</a>
+
+      <!-- ③ TEA PACKETS PILE -->
+<a href="#about" class="fan-card tea-object paper-prop paper-prop-tea card-in settled" style="--rot: 6deg; top: -80px; left: 245px; width: 300px; height: 276px; z-index: 3;">
+  <img src="assets/packet-pile.png" alt="Paper cutout pile of tea packets" loading="lazy">
+</a>
+
+      <!-- narrative text and nav — inside scatter-stage, below objects -->
+      <div class="hero-cards-story">
+        <p>Overcome with curiosity, you lift open the lid. Inside, you find several objects. A folded pair of blue sunglasses with a tiny “wear me” tag, a pile of tea packets, a rubber ducky (??), and a small green book titled "How to Fold a Paper Airplane." Each item draws you in, making your curiosity even stronger. What could it all mean? Do you start to examine the objects, or do you change your mind and close the box?</p>
+      </div>
+
+      <!-- nav options from cards section -->
+      <div class="hero-cards-nav">
+        <p class="choice-label">Where to next?</p>
+        <div class="section-nav-pills">
+          <a href="#work" class="choice-pill">Put on the sunglasses →</a>
+          <a href="#about" class="choice-pill">Brew a cup of tea →</a>
+          <button class="choice-pill" id="duck-trigger-2">Check out the rubber ducky</button>
+          <a href="#contact" class="choice-pill">Read the little green book →</a>
+          <button class="choice-pill" id="death-trigger-2">Close the box and go back to your stack of resumes</button>
+        </div>
+      </div>
+
+      </div><!-- /scatter-stage -->
+    </div><!-- /cards-scatter -->
+
+  </div><!-- /hero-cards-section -->
+  </div><!-- /box-open-scroller -->
+
+</section>
+
+
+
+<!-- ════════════════════════════════════
+     SECTION 2 — WORK
+════════════════════════════════════ -->
+
+<!-- ── GLASSES PUT-ON ANIMATION OVERLAY ── -->
+<div id="glasses-putOn" aria-hidden="true">
+  <img src="assets/sunglasses-overlay.png" alt="" id="glasses-putOn-img">
+</div>
+
+<section id="work">
+  <div class="work-lab work-vision-lab" id="work-vision-lab">
+
+
+    <div class="work-vision-intro">
+      <p class="work-desk-eyebrow">Work</p>
+      <h2 class="work-desk-heading">You put on the glasses.<br><em>The work starts floating into view.</em></h2>
+      <p class="work-desk-body">The lenses reveal projected artifacts — case studies, process notes, and finished work suspended like paper transparencies in the dark.</p>
+    </div>
+
+    <!-- Floating project artifacts -->
+    <div class="floating-work-space" id="work-slide-pile" aria-label="Project artifacts">
+
+      <button class="work-slide floating-work-card" type="button" data-project="avastin" style="--x: 2%; --y: 8%; --rot: -7deg; --depth: 1.04; --delay: .05s; --zi: 7;">
+        <span class="artifact-pin"></span>
+        <span class="artifact-arrow">→</span>
+        <span class="artifact-category" style="--cat:#5B8FA8">Web Design</span>
+        <span class="artifact-thumb"><img src="work/avastin.svg" alt=""></span>
+        <span class="artifact-title">Avastin</span>
+        <span class="artifact-desc">A patient-first digital experience for a cancer treatment brand.</span>
+        <span class="artifact-tags"><span class="artifact-tag">Branding</span><span class="artifact-tag">Web</span><span class="artifact-tag">Healthcare</span></span>
+      </button>
+
+      <button class="work-slide floating-work-card" type="button" data-project="planeta" style="--x: 20%; --y: 5%; --rot: 5deg; --depth: .94; --delay: .2s; --zi: 5;">
+        <span class="artifact-pin"></span>
+        <span class="artifact-arrow">→</span>
+        <span class="artifact-category" style="--cat:#7A6A4A">Editorial</span>
+        <span class="artifact-thumb"><img src="work/planeta-1.svg" alt=""></span>
+        <span class="artifact-title">Planeta</span>
+        <span class="artifact-desc">A bold editorial identity for an environmental magazine.</span>
+        <span class="artifact-tags"><span class="artifact-tag">Editorial</span><span class="artifact-tag">Print</span></span>
+      </button>
+
+      <button class="work-slide floating-work-card" type="button" data-project="new-era" style="--x: 38%; --y: 6%; --rot: -3deg; --depth: 1.02; --delay: .12s; --zi: 6;">
+        <span class="artifact-pin"></span>
+        <span class="artifact-arrow">→</span>
+        <span class="artifact-category" style="--cat:#5A7A5A">Branding</span>
+        <span class="artifact-thumb"><img src="work/new-era-vertical.svg" alt=""></span>
+        <span class="artifact-title">New Era</span>
+        <span class="artifact-desc">Heritage brand refresh for an iconic cap company.</span>
+        <span class="artifact-tags"><span class="artifact-tag">Branding</span><span class="artifact-tag">Identity</span></span>
+      </button>
+
+      <button class="work-slide floating-work-card" type="button" data-project="taislim" style="--x: 56%; --y: 5%; --rot: 8deg; --depth: .9; --delay: .3s; --zi: 4;">
+        <span class="artifact-pin"></span>
+        <span class="artifact-arrow">→</span>
+        <span class="artifact-category" style="--cat:#8A5A6A">Web Design</span>
+        <span class="artifact-thumb"><img src="assets/work/taislim1.png" alt=""></span>
+        <span class="artifact-title">TAIslim</span>
+        <span class="artifact-desc">Clean, clinical UI for a weight-management wellness brand.</span>
+        <span class="artifact-tags"><span class="artifact-tag">Web</span><span class="artifact-tag">UI</span></span>
+      </button>
+
+      <button class="work-slide floating-work-card" type="button" data-project="bcbs" style="--x: 74%; --y: 7%; --rot: -6deg; --depth: 1; --delay: .18s; --zi: 7;">
+        <span class="artifact-pin"></span>
+        <span class="artifact-arrow">→</span>
+        <span class="artifact-category" style="--cat:#4A6A8A">Art Direction</span>
+        <span class="artifact-thumb"><img src="work/bcbs.svg" alt=""></span>
+        <span class="artifact-title">BCBS AZ</span>
+        <span class="artifact-desc">Art direction and system design for a major health insurer.</span>
+        <span class="artifact-tags"><span class="artifact-tag">Art Direction</span><span class="artifact-tag">Healthcare</span></span>
+      </button>
+
+      <button class="work-slide floating-work-card" type="button" data-project="freelife" style="--x: 11%; --y: 52%; --rot: 6deg; --depth: .92; --delay: .25s; --zi: 4;">
+        <span class="artifact-pin"></span>
+        <span class="artifact-arrow">→</span>
+        <span class="artifact-category" style="--cat:#6A7A4A">Interactive</span>
+        <span class="artifact-thumb"><img src="work/freelife-1.svg" alt=""></span>
+        <span class="artifact-title">FreeLife</span>
+        <span class="artifact-desc">Interactive experience for a lifestyle and wellness platform.</span>
+        <span class="artifact-tags"><span class="artifact-tag">Interactive</span><span class="artifact-tag">Web</span></span>
+      </button>
+
+      <button class="work-slide floating-work-card" type="button" data-project="vfw" style="--x: 65%; --y: 50%; --rot: -2deg; --depth: .86; --delay: .36s; --zi: 3;">
+        <span class="artifact-pin"></span>
+        <span class="artifact-arrow">→</span>
+        <span class="artifact-category" style="--cat:#7A5A4A">Web Design</span>
+        <span class="artifact-thumb"><img src="assets/work/vfw1.png" alt=""></span>
+        <span class="artifact-title">VFW 9400</span>
+        <span class="artifact-desc">Modern digital presence for a veterans nonprofit chapter.</span>
+        <span class="artifact-tags"><span class="artifact-tag">Web</span><span class="artifact-tag">Nonprofit</span></span>
+      </button>
+
+    </div>
+
+  </div><!-- /work-lab -->
+
+</section>
+
+
+<!-- ════════════════════════════════════
+     SECTION 3 — ABOUT (overhead tea)
+════════════════════════════════════ -->
+<section id="about" class="tea-section">
+
+  <!-- ── TOP ROW: tea packets across the full width ── -->
+  <div class="tea-packets-row">
+    <p class="tea-col-label">Drag a packet into the cup to brew it</p>
+    <div class="tea-packets-pile" id="tea-shelf">
+
+      <div class="teabag" id="tb-about" data-tea="about">
+        <div class="tb-tear-wrap">
+          <img src="assets/packet1.png" alt="About Me" class="tb-bag-img" draggable="false">
+          <svg class="tb-tear-svg" viewBox="0 0 110 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline class="tb-tear-line" points="0,22 7,15 15,22 23,14 32,21 40,13 49,20 57,14 65,21 74,15 82,21 91,14 100,20 110,16 110,0 0,0"/><polygon class="tb-tear-flap" points="0,22 7,15 15,22 23,14 32,21 40,13 49,20 57,14 65,21 74,15 82,21 91,14 100,20 110,16 110,0 0,0"/></svg>
+        </div>
+        <span class="tb-pile-label">About Me</span>
+      </div>
+
+      <div class="teabag" id="tb-exp" data-tea="experience">
+        <div class="tb-tear-wrap">
+          <img src="assets/packet2.png" alt="Experience" class="tb-bag-img" draggable="false">
+          <svg class="tb-tear-svg" viewBox="0 0 110 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline class="tb-tear-line" points="0,20 9,13 17,21 26,14 34,20 43,12 52,19 60,14 68,21 77,13 86,20 94,13 103,21 110,16 110,0 0,0"/><polygon class="tb-tear-flap" points="0,20 9,13 17,21 26,14 34,20 43,12 52,19 60,14 68,21 77,13 86,20 94,13 103,21 110,16 110,0 0,0"/></svg>
+        </div>
+        <span class="tb-pile-label">Experience</span>
+      </div>
+
+      <div class="teabag" id="tb-skills" data-tea="skills">
+        <div class="tb-tear-wrap">
+          <img src="assets/packet3.png" alt="Proficiencies" class="tb-bag-img" draggable="false">
+          <svg class="tb-tear-svg" viewBox="0 0 110 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline class="tb-tear-line" points="0,21 8,14 16,22 25,15 33,21 42,13 50,20 59,15 67,22 76,14 84,21 93,14 101,21 110,17 110,0 0,0"/><polygon class="tb-tear-flap" points="0,21 8,14 16,22 25,15 33,21 42,13 50,20 59,15 67,22 76,14 84,21 93,14 101,21 110,17 110,0 0,0"/></svg>
+        </div>
+        <span class="tb-pile-label">Proficiencies</span>
+      </div>
+
+      <div class="teabag" id="tb-tools" data-tea="tools">
+        <div class="tb-tear-wrap">
+          <img src="assets/packet4.png" alt="Programs" class="tb-bag-img" draggable="false">
+          <svg class="tb-tear-svg" viewBox="0 0 110 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline class="tb-tear-line" points="0,19 8,13 17,20 25,14 34,21 42,13 51,20 59,14 68,22 76,15 85,21 93,13 102,20 110,16 110,0 0,0"/><polygon class="tb-tear-flap" points="0,19 8,13 17,20 25,14 34,21 42,13 51,20 59,14 68,22 76,15 85,21 93,13 102,20 110,16 110,0 0,0"/></svg>
+        </div>
+        <span class="tb-pile-label">Programs</span>
+      </div>
+
+      <div class="teabag" id="tb-contact" data-tea="contact">
+        <div class="tb-tear-wrap">
+          <img src="assets/packet5.png" alt="Contact" class="tb-bag-img" draggable="false">
+          <svg class="tb-tear-svg" viewBox="0 0 110 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline class="tb-tear-line" points="0,20 7,14 16,21 24,13 33,20 41,14 50,21 58,13 67,20 76,15 84,21 93,14 101,20 110,15 110,0 0,0"/><polygon class="tb-tear-flap" points="0,20 7,14 16,21 24,13 33,20 41,14 50,21 58,13 67,20 76,15 84,21 93,14 101,20 110,15 110,0 0,0"/></svg>
+        </div>
+        <span class="tb-pile-label">Contact</span>
+      </div>
+
+    </div>
+  </div><!-- /tea-packets-row -->
+
+  <!-- ── BOTTOM ROW: cup left | hero text right ── -->
+  <div class="tea-bottom-row">
+
+    <!-- LEFT: overhead teacup -->
+    <div class="tea-cup-col">
+      <div class="overhead-cup-wrap" id="teacup-wrap">
+
+        <div class="cup-steam-wrap" id="cup-steam-wrap">
+          <div class="cup-steam-wisp csw-1"></div>
+          <div class="cup-steam-wisp csw-2"></div>
+          <div class="cup-steam-wisp csw-3"></div>
+          <div class="cup-steam-wisp csw-4"></div>
+        </div>
+
+        <div class="cup-sprite-wrap" id="cup-sprite-wrap">
+          <div class="cup-sprite-layer state-water" id="cup-layer-a" data-state="water"></div>
+          <div class="cup-sprite-layer state-water" id="cup-layer-b" data-state="water" style="opacity:0"></div>
+
+          <div class="cup-hint-overlay" id="cup-hint-overlay">
+            <span>drop a packet</span>
+            <span>to brew</span>
+          </div>
+
+
+        </div>
+
+        <div class="cup-drop-ring" id="cup-drop-ring"></div>
+
+
+        <button class="cup-reset-btn" id="cup-reset-btn" style="display:none">
+          ↺ drink cup
+        </button>
+
+      </div><!-- /overhead-cup-wrap -->
+    </div><!-- /tea-cup-col -->
+
+    <!-- RIGHT: hero text (default) | brewed info (after steep) -->
+    <div class="tea-hero-col">
+
+      <!-- Default state — shown before any brewing -->
+      <div class="tea-hero-default" id="tea-hero-default">
+        <p class="section-eyebrow">About</p>
+        <h2 class="section-heading">Steep yourself<br>in the <em>details</em></h2>
+        <p class="tea-hero-body">Each packet holds something different. Drag one into the cup to see what brews.</p>
+        <div class="tea-hero-pills">
+          <a href="#hero" class="choice-pill">Start looking through the box →</a>
+          <a href="#contact" class="choice-pill">Contact the sender →</a>
+        </div>
+      </div>
+
+      <!-- Brewed state — fades in after steep -->
+      <div class="tea-hero-brewed" id="tea-hero-brewed">
+        <div id="cup-content-inner" class="cup-content-inner"></div>
+        <div class="tea-hero-pills tea-brewed-pills">
+          <a href="#hero" class="choice-pill">Start looking through the box →</a>
+          <a href="#contact" class="choice-pill">Contact the sender →</a>
+        </div>
+      </div>
+
+    </div><!-- /tea-hero-col -->
+
+  </div><!-- /tea-bottom-row -->
+
+</section>
+
+
+<!-- ════════════════════════════════════
+     SECTION 4 — CONTACT (paper airplane book)
+════════════════════════════════════ -->
+<section id="contact" class="contact-section">
+
+  <!-- Hero text at top -->
+  <div class="contact-hero">
+    <p class="section-eyebrow">Contact</p>
+    <h2 class="section-heading">Good call.<br><em>Let's do this.</em></h2>
+    <p class="contact-hero-body">Pick up the little green book. Choose your aircraft, fold carefully, and send it my way.</p>
+  </div>
+
+  <!-- Click-off overlay to close the book -->
+  <div class="contact-clickoff" id="contact-clickoff"></div>
+
+  <div class="contact-scene">
+
+    <!-- ── BOOK ── -->
+    <div class="contact-book-wrap" id="contact-book-wrap">
+      <div class="contact-book" id="contact-book">
+
+        <!-- LEFT PAGE: always in DOM at left:0 width:50%, opacity:0 until open -->
+        <div class="book-page-left" id="book-page-left">
+          <p class="book-page-eyebrow" style="text-align:center;margin-bottom:0.75rem;">Designs</p>
+          <div class="book-diagram" id="diag-dart">
+            <div class="diag-tile" style="--tile-bg:#F5A94A">
+              <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+                <polygon points="10,58 108,38 80,66" fill="#E8E4DC" stroke="rgba(200,195,185,0.6)" stroke-width="0.8"/>
+                <polygon points="10,58 108,38 72,28" fill="#F8F6F2" stroke="rgba(210,205,195,0.5)" stroke-width="0.8"/>
+                <polygon points="10,58 108,38 86,46" fill="#D8D4CC" stroke="rgba(190,185,175,0.6)" stroke-width="0.6"/>
+                <line x1="10" y1="58" x2="108" y2="38" stroke="rgba(180,175,165,0.9)" stroke-width="1"/>
+                <line x1="10" y1="58" x2="86" y2="46" stroke="rgba(180,175,165,0.5)" stroke-width="0.7" stroke-dasharray="4,2"/>
+                <line x1="50" y1="52" x2="80" y2="45" stroke="rgba(160,155,145,0.6)" stroke-width="0.6"/>
+              </svg>
+            </div>
+            <p class="diag-label">The Dart</p>
+          </div>
+          <div class="book-diagram" id="diag-glider">
+            <div class="diag-tile" style="--tile-bg:#7EC8E0">
+              <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+                <polygon points="60,45 110,40 10,62" fill="#E8E4DC" stroke="rgba(200,195,185,0.6)" stroke-width="0.8"/>
+                <polygon points="60,45 110,40 10,28" fill="#F8F6F2" stroke="rgba(210,205,195,0.5)" stroke-width="0.8"/>
+                <polygon points="60,42 110,40 60,45" fill="#D0CCC4" stroke="rgba(190,185,175,0.6)" stroke-width="0.6"/>
+                <line x1="10" y1="62" x2="110" y2="40" stroke="rgba(180,175,165,0.9)" stroke-width="1"/>
+                <line x1="10" y1="28" x2="110" y2="40" stroke="rgba(180,175,165,0.9)" stroke-width="1"/>
+                <line x1="60" y1="28" x2="60" y2="62" stroke="rgba(160,155,145,0.5)" stroke-width="0.7" stroke-dasharray="3,2"/>
+                <line x1="35" y1="52" x2="60" y2="45" stroke="rgba(160,155,145,0.5)" stroke-width="0.6"/>
+                <line x1="35" y1="38" x2="60" y2="42" stroke="rgba(160,155,145,0.5)" stroke-width="0.6"/>
+              </svg>
+            </div>
+            <p class="diag-label">The Glider</p>
+          </div>
+          <div class="book-diagram" id="diag-hunter">
+            <div class="diag-tile" style="--tile-bg:#E88A9A">
+              <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+                <polygon points="14,58 108,38 76,66" fill="#E8E4DC" stroke="rgba(200,195,185,0.6)" stroke-width="0.8"/>
+                <polygon points="14,58 108,38 62,22" fill="#F8F6F2" stroke="rgba(210,205,195,0.5)" stroke-width="0.8"/>
+                <polygon points="14,58 108,38 82,46" fill="#D8D4CC" stroke="rgba(190,185,175,0.6)" stroke-width="0.6"/>
+                <polygon points="14,58 108,38 24,26" fill="#ECEAE6" stroke="rgba(200,195,185,0.5)" stroke-width="0.6"/>
+                <line x1="14" y1="58" x2="108" y2="38" stroke="rgba(180,175,165,0.9)" stroke-width="1"/>
+                <line x1="14" y1="58" x2="24" y2="26" stroke="rgba(180,175,165,0.7)" stroke-width="0.8"/>
+                <line x1="14" y1="58" x2="82" y2="46" stroke="rgba(160,155,145,0.5)" stroke-width="0.6" stroke-dasharray="3,2"/>
+              </svg>
+            </div>
+            <p class="diag-label">The Hunter</p>
+          </div>
+        </div><!-- /book-page-left -->
+
+        <!-- RIGHT PAGE: always visible at right:0 width:50%, sits behind cover -->
+        <div class="book-page-right">
+          <div class="book-interior-panel" id="book-choice-page">
+            <p class="book-page-eyebrow">Chapter One</p>
+            <h3 class="book-page-heading">Select your aircraft</h3>
+            <p class="book-page-body">Three proven designs — or skip straight to winging it.</p>
+            <div class="book-choices">
+              <button class="book-choice-btn" data-plane="dart"
+                onmouseenter="highlightDiagram('dart')" onmouseleave="highlightDiagram(null)"
+                onclick="choosePlane('dart')">
+                <span class="bcb-name">The Dart</span><span class="bcb-desc">Classic. Reliable. Fast.</span>
+              </button>
+              <button class="book-choice-btn" data-plane="glider"
+                onmouseenter="highlightDiagram('glider')" onmouseleave="highlightDiagram(null)"
+                onclick="choosePlane('glider')">
+                <span class="bcb-name">The Glider</span><span class="bcb-desc">Wide. Graceful. Floats.</span>
+              </button>
+              <button class="book-choice-btn" data-plane="hunter"
+                onmouseenter="highlightDiagram('hunter')" onmouseleave="highlightDiagram(null)"
+                onclick="choosePlane('hunter')">
+                <span class="bcb-name">The Hunter</span><span class="bcb-desc">Swept wings. Aggressive.</span>
+              </button>
+              <button class="book-choice-btn" onclick="wingIt()">
+                <span class="bcb-name">Wing it</span><span class="bcb-desc">Ignore the instructions entirely.</span>
+              </button>
+            </div>
+          </div>
+          <div class="book-interior-panel" id="book-form-page" style="display:none">
+            <button class="book-back-btn" onclick="showChoicePage()">← back</button>
+            <p class="book-page-eyebrow" id="book-plane-label">Flying a Dart</p>
+            <h3 class="book-page-heading">Send it my way</h3>
+            <div class="book-form">
+              <div class="book-form-row">
+                <div class="book-form-group"><label>First name</label><input type="text" id="bf-fname" placeholder="Jane"></div>
+                <div class="book-form-group"><label>Last name</label><input type="text" id="bf-lname" placeholder="Smith"></div>
+              </div>
+              <div class="book-form-group"><label>Email</label><input type="email" id="bf-email" placeholder="jane@company.com"></div>
+              <div class="book-form-group"><label>Message</label><textarea id="bf-msg" placeholder="Tell me about your project..."></textarea></div>
+              <button class="book-launch-btn" onclick="launchPlane()">Launch ✈</button>
+            </div>
+          </div>
+          <div class="book-interior-panel" id="book-success-page" style="display:none">
+            <div class="book-success-plane">✈</div>
+            <h3 class="book-page-heading">It's airborne.</h3>
+            <p class="book-page-body">Your message is on its way. I'll be in touch soon — probably before the plane lands.</p>
+            <div class="book-links">
+              <a href="mailto:hello@marystrong.com" class="book-link">✉ hello@marystrong.com</a>
+              <a href="https://linkedin.com/in/yourprofile" target="_blank" class="book-link">in LinkedIn</a>
+              <a href="#" class="book-link">↓ Download Résumé</a>
+            </div>
+          </div>
+        </div><!-- /book-page-right -->
+
+        <!-- SPINE: fades in when open -->
+        <div class="book-spine" id="book-spine"></div>
+
+        <!-- COVER: right:0 width:50%, rotateY(-180deg) on open, hinges left center -->
+        <div class="book-cover" id="book-cover">
+          <div class="book-cover-front">
+            <div class="book-cover-inner">
+              <div class="book-cover-plane">
+                <svg viewBox="0 0 100 70" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+                  <polygon points="5,45 90,22 65,55" fill="rgba(240,235,200,0.7)"/>
+                  <polygon points="5,45 90,22 58,18" fill="rgba(255,252,230,0.85)"/>
+                  <polygon points="5,45 90,22 72,34" fill="rgba(220,215,185,0.65)"/>
+                  <line x1="5" y1="45" x2="90" y2="22" stroke="rgba(200,195,160,0.5)" stroke-width="1"/>
+                </svg>
+              </div>
+              <h2 class="book-cover-title">How to Fold<br>a Paper Airplane</h2>
+              <p class="book-cover-sub">an illustrated guide</p>
+              <p class="book-cover-hint">Click to open →</p>
+            </div>
+          </div>
+          <div class="book-cover-back"></div>
+        </div><!-- /book-cover -->
+
+      </div><!-- /contact-book -->
+    </div><!-- /contact-book-wrap -->
+
+  </div><!-- /contact-scene -->
+
+  <div class="section-nav section-nav-dark">
+    <p class="section-nav-label">Not ready to commit?</p>
+    <div class="section-nav-pills">
+      <a href="#work" class="choice-pill choice-pill-light">Back to the slides →</a>
+      <a href="#about" class="choice-pill choice-pill-light">Turn the box over →</a>
+      <a href="#hero" class="choice-pill choice-pill-outline-light">Back to the box →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     DEATH OVERLAY
+════════════════════════════════════ -->
+<div class="death-overlay" id="death-overlay">
+  <div class="death-modal">
+    <div class="death-modal-text">
+      <p class="death-story">You set the box aside. You keep looking. The stack grows taller. The coffee grows colder. Years pass. The resumes blur together into one long, beige nightmare. You are still at your desk. You will always be at your desk. <em>You never did find the right designer.</em></p>
+      <p class="death-the-end">The End</p>
+      <a href="#hero" class="death-back" id="death-back">← Go back. Open the box.</a>
+    </div>
+    <div class="death-modal-image">
+      <img src="assets/ending1.png" alt="The end" class="modal-img" id="death-img" style="width:100%;height:100%;object-fit:cover;display:block;object-position:center center;">
+    </div>
+  </div>
+</div>
+
+
+<!-- PAPER AIRPLANE BAD ENDING MODAL -->
+<div class="death-overlay" id="airplane-overlay">
+  <div class="death-modal">
+    <div class="death-modal-text">
+      <p class="death-story">You decide to wing it. How hard can it be? Paper is paper. Aerodynamics is just, like, air stuff. You fold confidently — a crumple here, a crease there, something that vaguely resembles a triangle. You step outside and launch it with authority.<br><br>It veers immediately left. Then hard right. Then, defying every known law of physics, it curves in a wide arc — backwards. Directly at your face. Before you can move, it catches you square in the eye. <em>Squared.</em><br><br>Your eye is on fire. Red. Weeping. You stand there in the parking lot, one hand over your face, your little crumpled triangle lying at your feet, victorious.<br><br>You never did get in touch with that designer. She was perfect for the role. But now you have a stabbed eye and a new, deeply personal fear of paper.</p>
+      <p class="death-the-end">The End</p>
+      <a href="#contact" class="death-back" id="airplane-back">← Try again (carefully this time)</a>
+    </div>
+    <div class="death-modal-image">
+      <img src="assets/ending3.png" alt="The end" style="width:100%;height:100%;object-fit:cover;display:block;">
+    </div>
+  </div>
+</div>
+
+
+<!-- DUCK BAD ENDING MODAL -->
+<div class="duck-overlay" id="duck-overlay">
+  <div class="duck-modal">
+    <div class="duck-modal-text">
+      <p class="duck-story">When you pick up the rubber ducky, something doesn't feel right. It looks and feels like a regular duck, but the energy you get from it is all wrong. And has its eyes turned red? Before you can drop it, the duck's red eye turns and looks you straight in the eye. It starts to bulge and contort in your hand, its red eye slowly getting larger and larger. You can't stop staring at its glaring red eye as it gets too large for you to hold on to any longer. Its eye is huge now, its shape growing into a large round orb with what looks like sharp teeth. It looks at you hungrily. What are you waiting for, <em>run!</em></p>
+      <p class="duck-the-end">The End</p>
+      <a href="#hero" class="duck-back" id="duck-back">← Go back</a>
+    </div>
+    <div class="duck-modal-image">
+      <img src="assets/ending2.png" alt="The duck" class="modal-img" id="duck-img" style="width:100%;height:100%;object-fit:cover;display:block;object-position:center center;">
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <a href="#hero">Mary Strong</a>
+  <span>Designer &amp; Creative &mdash; © 2026</span>
+</footer>
+
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.fi').textContent = '+';
+      });
+      if (!open) {
+        item.classList.add('open');
+        btn.querySelector('.fi').textContent = '−';
+      }
+    });
+  });
+
+  function handleSubmit() {
+    var fname = document.getElementById('fname').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var msg   = document.getElementById('msg').value.trim();
+    var missing = [];
+    if (!fname) missing.push('your name');
+    if (!email) missing.push('your email');
+    if (!msg)   missing.push('a message');
+    if (missing.length) { alert('Please add ' + missing.join(' and ') + ' before sending.'); return; }
+    document.getElementById('form-inner').style.display = 'none';
+    var s = document.getElementById('success-inner');
+    s.style.display = 'flex';
+  }
+</script>
+
+<script>
+  var projects = {
+    avastin: {
+      title: 'Avastin Website Redesign', label: 'Web Design · Healthcare',
+      hero: 'work/avastin.svg', thumbs: ['work/avastin.svg'],
+      problem: 'The patient-facing Avastin site had dense, compliance-heavy content that overwhelmed users. Cancer patients and caregivers needed clear, accessible information but were met with cluttered layouts and poor visual hierarchy.',
+      solution: 'A full redesign prioritising content hierarchy and readability. Required safety language was reframed as part of the experience rather than an obstacle. Clean type scales, generous whitespace, and a calm visual language helped patients focus on what mattered.',
+      outcomes: 'Improved accessibility scores, clearer navigation paths for patients and caregivers, and FDA compliance maintained throughout. The redesigned site reduced time-to-key-information significantly.'
+    },
+    planeta: {
+      title: 'Planeta Website', label: 'Web Design',
+      hero: 'work/planeta-1.svg', thumbs: ['work/planeta-1.svg'],
+      problem: 'Planeta needed a web presence that matched their brand personality — considered and distinct — without sacrificing usability or getting lost in visual noise.',
+      solution: 'A clean, type-forward design that lets the brand breathe. Navigation is intuitive, the layout grid is consistent, and the visual identity carries through every page without overwhelming the content.',
+      outcomes: 'A site that accurately represents the brand, is easy to maintain, and gives visitors a clear sense of who Planeta is within the first few seconds.'
+    },
+    'new-era': {
+      title: 'New Era Moving', label: 'Branding · Logo Design',
+      hero: 'work/new-era-vertical.svg', thumbs: ['work/new-era-vertical.svg'],
+      problem: 'New Era Moving needed a brand identity that felt established and trustworthy — not generic — in a crowded market where most moving companies look identical.',
+      solution: 'A wordmark and identity system built around clean, contemporary letterforms with subtle details that suggest precision and care. The mark works at any scale from trucks to business cards.',
+      outcomes: 'A distinctive brand identity that sets New Era apart in their market, with a flexible system that scales across all touchpoints.'
+    },
+    taislim: {
+      title: 'TAIslim.com', label: 'Web Design',
+      hero: 'assets/work/taislim1.png', thumbs: ['assets/work/taislim1.png', 'assets/work/taislim2.png', 'assets/work/taislim3.png', 'assets/work/taislim4.png', 'assets/work/taislim5.png'],
+      problem: 'TAIslim\'s existing website wasn\'t converting. Visitors weren\'t finding the information they needed quickly, and the design didn\'t reflect the quality of the product.',
+      solution: 'A full website redesign with a focus on product clarity, visual hierarchy, and conversion. Aesthetic and function were given equal weight throughout every decision.',
+      outcomes: 'A more cohesive brand experience online, clearer product pages, and an improved path to conversion for new customers.'
+    },
+    bcbs: {
+      title: 'BCBS Arizona Redesign', label: 'Web Design · Healthcare',
+      hero: 'work/bcbs.svg', thumbs: ['work/bcbs.svg'],
+      problem: 'Blue Cross Blue Shield of Arizona\'s website made plan discovery unnecessarily complex. Individuals, families, and employers all had different needs but were funnelled through the same confusing navigation.',
+      solution: 'A redesigned information architecture that separates user journeys clearly from the start. Streamlined navigation, simplified plan comparison, and plain-language copy throughout.',
+      outcomes: 'Significantly improved plan discovery flow, reduced navigation complexity, and a cleaner experience for all three primary user groups.'
+    },
+    freelife: {
+      title: 'FreeLife Live It', label: 'Web Design',
+      hero: 'work/freelife-1.svg', thumbs: ['work/freelife-1.svg'],
+      problem: 'FreeLife needed a website that was vibrant and energetic without sacrificing clarity or purpose. The brand had personality but the existing site wasn\'t expressing it.',
+      solution: 'A bold, expressive web design that puts the brand\'s energy front and centre. Layout, colour, and typography all work together to create a sense of momentum and optimism.',
+      outcomes: 'A site that genuinely reflects the FreeLife brand, engages visitors immediately, and drives them toward conversion.'
+    },
+    vfw: {
+      title: 'VFW 9400 Website', label: 'Web Design · Nonprofit',
+      hero: 'assets/work/vfw1.png', thumbs: ['assets/work/vfw1.png', 'assets/work/vfw2.png', 'assets/work/vfw3.png', 'assets/work/vfw4.png', 'assets/work/vfw5.png', 'assets/work/vfw6.png'],
+      problem: 'The VFW 9400 website felt outdated and didn\'t serve its community well. Veterans and their families needed easier access to events, resources, and contact information.',
+      solution: 'A modernised design that honours the legacy of the organisation while making the site genuinely useful. Clear navigation, event listings, and resource pages designed for an older demographic without condescending to them.',
+      outcomes: 'A more accessible, easier-to-navigate site that better serves veterans and their families in the local community.'
+    }
+  };
+
+</script>
+
+<script>
+  var filterBtns = document.querySelectorAll('.gf-btn');
+  var galleryItems = document.querySelectorAll('.gallery-item');
+
+  filterBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.dataset.filter;
+      galleryItems.forEach(function(item) {
+        if (filter === 'all' || item.dataset.cat === filter) {
+          item.style.opacity = '1';
+          item.style.pointerEvents = 'auto';
+          item.classList.remove('gi-hidden');
+        } else {
+          item.style.opacity = '0.15';
+          item.style.pointerEvents = 'none';
+          item.classList.add('gi-hidden');
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+(function() {
+  var t1      = document.getElementById('death-trigger');
+  var t2      = document.getElementById('death-trigger-2');
+  var backBtn = document.getElementById('death-back');
+  var overlay = document.getElementById('death-overlay');
+
+  function triggerDeath() {
+    if (overlay) {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeDeath() {
+    if (overlay) {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+
+  if (t1)      t1.addEventListener('click', triggerDeath);
+  if (t2)      t2.addEventListener('click', triggerDeath);
+  if (backBtn) backBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    closeDeath();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  if (overlay) overlay.addEventListener('click', function(e) {
+    if (e.target === this) closeDeath();
+  });
+})();
+</script>
+
+<script>
+/* ── DUCK BAD ENDING ── */
+(function() {
+  var duck    = document.getElementById('duck-trigger');
+  var duck2   = document.getElementById('duck-trigger-2');
+  var overlay = document.getElementById('duck-overlay');
+  var backBtn = document.getElementById('duck-back');
+
+  if (!overlay) return;
+
+  function openDuck() {
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  if (duck)  duck.addEventListener('click', openDuck);
+  if (duck2) duck2.addEventListener('click', openDuck);
+
+  function closeDuck() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  if (backBtn) backBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    closeDuck();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  overlay.addEventListener('click', function(e) {
+    if (e.target === this) closeDuck();
+  });
+})();
+</script>
+
+<script>
+/* ══════════════════════════════════════════
+   SCROLL ANIMATIONS
+══════════════════════════════════════════ */
+
+(function() {
+
+  // ── 1. General data-anim elements ──
+  var animEls = document.querySelectorAll('[data-anim]');
+  var generalObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        generalObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  animEls.forEach(function(el) { generalObs.observe(el); });
+
+  // ── 2. Overhead teacup drag-and-steep interaction ──
+  (function() {
+    var teaData = {
+      about: {
+        title: 'About Me',
+        color: '#C8965A',
+        html: '<div class="cup-info-block"><p class="cup-info-eyebrow">Origin &middot; PHX</p><h3>Hi, I\'m Mary.</h3><p>A graphic and web designer with 10+ years of experience. I love the intersection of strategy and aesthetics &mdash; design that doesn\'t just look good but actually <em>works</em>.</p><p>Based in Phoenix, AZ. Open to freelance and full-time opportunities.</p><div class="cup-avail"><span class="avail-dot"></span> Open to new work</div></div>'
+      },
+      experience: {
+        title: 'Experience',
+        color: '#A07040',
+        html: '<div class="cup-info-block"><p class="cup-info-eyebrow">Vintage Reserve &middot; 10+ Years</p><h3>Experience</h3><div class="cup-timeline"><div class="cup-tl"><span class="cup-tl-year">2022 – Now</span><span class="cup-tl-role">Freelance Designer</span></div><div class="cup-tl"><span class="cup-tl-year">2019 – 2022</span><span class="cup-tl-role">Your Job Title</span></div><div class="cup-tl"><span class="cup-tl-year">2016 – 2019</span><span class="cup-tl-role">Your Job Title</span></div><div class="cup-tl"><span class="cup-tl-year">2012 – 2016</span><span class="cup-tl-role">BA Graphic Design</span></div></div></div>'
+      },
+      skills: {
+        title: 'Proficiencies',
+        color: '#B87A30',
+        html: '<div class="cup-info-block"><p class="cup-info-eyebrow">Artisan Blend</p><h3>What I Do</h3><div class="cup-skills"><div class="cup-skill-col"><span>Web Design</span><span>Branding</span><span>Typography</span><span>Print Design</span><span>UI / UX</span></div><div class="cup-skill-col"><span>Illustration</span><span>Layout</span><span>Stationery</span><span>Art Direction</span><span>Design Systems</span></div></div></div>'
+      },
+      tools: {
+        title: 'Programs',
+        color: '#906828',
+        html: '<div class="cup-info-block"><p class="cup-info-eyebrow">Craft Series</p><h3>Programs</h3><div class="cup-skills"><div class="cup-skill-col"><span>Figma</span><span>Illustrator</span><span>Photoshop</span><span>InDesign</span><span>Procreate</span></div><div class="cup-skill-col"><span>After Effects</span><span>WordPress</span><span>Webflow</span><span>Canva</span><span>Google Suite</span></div></div></div>'
+      },
+      contact: {
+        title: 'Contact',
+        color: '#C87840',
+        html: '<div class="cup-info-block"><p class="cup-info-eyebrow">Rare Edition</p><h3>Say Hello</h3><p>Whether you have a project in mind or just want to connect &mdash; I\'d love to hear from you.</p><div class="cup-contact"><a href="mailto:hello@marystrong.com">&#9993; hello@marystrong.com</a><a href="https://linkedin.com/in/yourprofile" target="_blank">in linkedin.com/in/yourprofile</a><a href="#">&#8595; Download R&eacute;sum&eacute;</a></div></div>'
+      }
+    };
+
+    var bags            = document.querySelectorAll('.teabag');
+    var cupWrap         = document.getElementById('teacup-wrap');
+    var cupDropRing     = document.getElementById('cup-drop-ring');
+    var cupResetBtn     = document.getElementById('cup-reset-btn');
+    var cupHintOverlay  = document.getElementById('cup-hint-overlay');
+    var cupHeroDefault  = document.getElementById('tea-hero-default');
+    var cupHeroBrewed   = document.getElementById('tea-hero-brewed');
+    var cupContentInner = document.getElementById('cup-content-inner');
+    var layerA          = document.getElementById('cup-layer-a');
+    var layerB          = document.getElementById('cup-layer-b');
+
+    if (!cupWrap || !bags.length) return;
+
+    var cupStates = {
+      water:              'state-water',
+      coffee:             'state-coffee',
+      'white-tea':        'state-white-tea',
+      tea:                'state-tea',
+      matcha:             'state-matcha',
+      cocoa:              'state-cocoa',
+      'empty-water':      'state-empty-water',
+      'empty-coffee':     'state-empty-coffee',
+      'empty-white-tea':  'state-empty-white-tea',
+      'empty-tea':        'state-empty-tea',
+      'empty-matcha':     'state-empty-matcha',
+      'empty-cocoa':      'state-empty-cocoa'
+    };
+
+    var teaToCupState = {
+      about:      { brew: 'coffee',    empty: 'empty-coffee'    },
+      experience: { brew: 'tea',       empty: 'empty-tea'       },
+      skills:     { brew: 'white-tea', empty: 'empty-white-tea' },
+      tools:      { brew: 'matcha',    empty: 'empty-matcha'    },
+      contact:    { brew: 'cocoa',     empty: 'empty-cocoa'     }
+    };
+
+    var activeLayer = 'a'; // which layer is currently visible
+
+    function setCupState(state, instant) {
+      var cls = cupStates[state] || 'state-empty';
+      var front = activeLayer === 'a' ? layerA : layerB;
+      var back  = activeLayer === 'a' ? layerB : layerA;
+
+      if (instant) {
+        front.className = 'cup-sprite-layer ' + cls;
+        return;
+      }
+
+      // Prepare back layer with new state, then crossfade
+      back.className = 'cup-sprite-layer ' + cls;
+      back.style.transition = 'none';
+      back.style.opacity = '0';
+      // force reflow
+      back.offsetHeight;
+      back.style.transition = 'opacity 1.2s ease';
+      back.style.opacity = '1';
+      front.style.transition = 'opacity 1.2s ease';
+      front.style.opacity = '0';
+
+      activeLayer = activeLayer === 'a' ? 'b' : 'a';
+    }
+
+    var dragClone = null;
+    var activeBag = null;
+    var isBrewed  = false;
+    var currentBrewedTea = null; // tracks which tea is currently brewed
+    activeLayer = 'a'; // layer A already shows water from HTML
+    var offsetX   = 0, offsetY = 0;
+
+    function makeDragClone(bag) {
+      var clone = document.createElement('div');
+      clone.className = 'tb-drag-clone';
+      var img = document.createElement('img');
+      img.src = 'assets/tea-bag.svg';
+      img.alt = 'tea bag';
+      img.draggable = false;
+      img.style.cssText = 'width:100%;height:auto;display:block;pointer-events:none;';
+      clone.appendChild(img);
+      document.body.appendChild(clone);
+      return clone;
+    }
+
+    function isOverCup(cx, cy) {
+      var rect = cupWrap.getBoundingClientRect();
+      // generous rectangular hit — the visual circle is ~90% of the wrap
+      return cx >= rect.left && cx <= rect.right &&
+             cy >= rect.top  && cy <= rect.bottom;
+    }
+
+    // Click packet → pick it up (clone follows cursor).
+    // Click cup → drop and steep. Click elsewhere → put back.
+    function pickUpBag(bag, cx, cy) {
+      if (bag.classList.contains('tb-steeped')) return;
+      if (activeBag) putDownBag(); // drop previous if any
+      activeBag = bag;
+      bag.classList.add('tb-dragging');
+      dragClone = makeDragClone(bag);
+      offsetX = 60; offsetY = 70;
+      dragClone.style.left = (cx - offsetX) + 'px';
+      dragClone.style.top  = (cy - offsetY) + 'px';
+      document.body.style.cursor = 'none';
+    }
+
+    function putDownBag() {
+      if (!activeBag || !dragClone) return;
+      activeBag.classList.remove('tb-dragging');
+      if (dragClone.parentNode) dragClone.parentNode.removeChild(dragClone);
+      dragClone = null;
+      activeBag = null;
+      cupDropRing.classList.remove('drop-ready');
+      document.body.style.cursor = '';
+    }
+
+    function moveDragClone(e) {
+      if (!dragClone) return;
+      var cx = e.clientX || (e.touches && e.touches[0].clientX);
+      var cy = e.clientY || (e.touches && e.touches[0].clientY);
+      dragClone.style.left = (cx - offsetX) + 'px';
+      dragClone.style.top  = (cy - offsetY) + 'px';
+      cupDropRing.classList.toggle('drop-ready', isOverCup(cx, cy));
+    }
+
+    function emptyCup(bag, clone) {
+      // Cup is already brewed — drain it, then re-steep with the new bag
+      var rect = cupWrap.getBoundingClientRect();
+      // Animate clone into cup
+      clone.style.transition = 'left 0.32s ease, top 0.32s ease, transform 0.32s ease, opacity 0.35s ease';
+      clone.style.left      = (rect.left + rect.width  / 2 - 35) + 'px';
+      clone.style.top       = (rect.top  + rect.height / 2 - 40) + 'px';
+      clone.style.transform = 'scale(0.35) rotate(20deg)';
+      clone.style.opacity   = '0.4';
+
+      bag.classList.remove('tb-dragging');
+
+      // Clear the old brewed state immediately
+      if (cupHeroDefault) { cupHeroDefault.style.opacity = '1'; cupHeroDefault.style.pointerEvents = 'auto'; }
+      if (cupHeroBrewed)  { cupHeroBrewed.style.opacity  = '0'; cupHeroBrewed.style.pointerEvents  = 'none'; }
+      if (cupContentInner) cupContentInner.innerHTML = '';
+      if (cupResetBtn)     cupResetBtn.style.display = 'none';
+
+      // Transition through empty state using the empty sprite
+      // Use the drain state matching whatever was previously brewed
+      var prevBrew = currentBrewedTea ? teaToCupState[currentBrewedTea].empty : 'empty-water';
+      setCupState(prevBrew);
+
+      setTimeout(function() {
+        clone.style.opacity = '0';
+        setTimeout(function() {
+          if (clone.parentNode) clone.parentNode.removeChild(clone);
+          dragClone = null;
+          // Un-steep all bags so they're all available again
+          bags.forEach(function(b) { b.classList.remove('tb-steeped'); });
+          isBrewed = false;
+          // Now steep the new bag normally
+          steepBag(bag, null);
+        }, 600);
+      }, 350);
+    }
+
+    function steepBag(bag, clone) {
+      // If cup is already brewed, drain first
+      if (isBrewed && clone) { emptyCup(bag, clone); return; }
+
+      var rect = cupWrap.getBoundingClientRect();
+
+      // Animate clone dropping into cup (skip if called from emptyCup with null clone)
+      if (clone) {
+        clone.style.transition = 'left 0.32s ease, top 0.32s ease, transform 0.32s ease, opacity 0.35s ease';
+        clone.style.left      = (rect.left + rect.width  / 2 - 35) + 'px';
+        clone.style.top       = (rect.top  + rect.height / 2 - 40) + 'px';
+        clone.style.transform = 'scale(0.35) rotate(20deg)';
+        clone.style.opacity   = '0.4';
+      }
+
+      bag.classList.remove('tb-dragging');
+      bag.classList.add('tb-steeped');
+
+      // Briefly show full water before brewing
+      setCupState('water');
+
+      setTimeout(function() {
+        if (clone) clone.style.opacity = '0';
+
+        // Hide hint
+        if (cupHintOverlay) cupHintOverlay.style.opacity = '0';
+
+        // After a beat, transition to the brewed state
+        setTimeout(function() {
+          if (clone && clone.parentNode) clone.parentNode.removeChild(clone);
+          dragClone = null;
+          activeBag = null;
+
+          var data     = teaData[bag.dataset.tea];
+          var cupState = (teaToCupState[bag.dataset.tea] && teaToCupState[bag.dataset.tea].brew) || 'tea';
+          currentBrewedTea = bag.dataset.tea;
+          setCupState(cupState);
+
+
+          if (data && cupContentInner) {
+            cupContentInner.innerHTML = data.html;
+            // Fade out hero, fade in brewed content on the right
+            if (cupHeroDefault) {
+              cupHeroDefault.style.transition = 'opacity 0.5s ease';
+              cupHeroDefault.style.opacity = '0';
+              cupHeroDefault.style.pointerEvents = 'none';
+            }
+            if (cupHeroBrewed) {
+              cupHeroBrewed.style.transition = 'opacity 0.8s ease';
+              cupHeroBrewed.style.transitionDelay = '0.3s';
+              cupHeroBrewed.style.opacity = '1';
+              cupHeroBrewed.style.pointerEvents = 'auto';
+            }
+          }
+
+          isBrewed = true;
+          if (cupResetBtn) cupResetBtn.style.display = 'block';
+        }, 900);
+      }, 380);
+    }
+
+    function resetCup() {
+      var emptyState = currentBrewedTea ? teaToCupState[currentBrewedTea].empty : 'empty-water';
+      setCupState(emptyState);
+      if (cupHintOverlay) cupHintOverlay.style.opacity = '1';
+      if (cupContentInner) cupContentInner.innerHTML = '';
+      if (cupHeroDefault) { cupHeroDefault.style.transition = 'opacity 0.4s ease'; cupHeroDefault.style.opacity = '1'; cupHeroDefault.style.pointerEvents = 'auto'; }
+      if (cupHeroBrewed)  { cupHeroBrewed.style.transition  = 'opacity 0.3s ease'; cupHeroBrewed.style.opacity  = '0'; cupHeroBrewed.style.pointerEvents  = 'none'; }
+      if (cupResetBtn)    cupResetBtn.style.display = 'none';
+      bags.forEach(function(b) { b.classList.remove('tb-steeped'); });
+      isBrewed = false;
+      currentBrewedTea = null;
+    }
+
+    if (cupResetBtn) cupResetBtn.addEventListener('click', resetCup);
+
+    // Click packet → pick up
+    bags.forEach(function(bag) {
+      bag.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (activeBag === bag) { putDownBag(); return; }
+        pickUpBag(bag, e.clientX, e.clientY);
+      });
+      bag.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (activeBag === bag) { putDownBag(); return; }
+        pickUpBag(bag, e.touches[0].clientX, e.touches[0].clientY);
+      }, { passive: false });
+    });
+
+    // Move clone with cursor
+    document.addEventListener('mousemove', moveDragClone);
+    document.addEventListener('touchmove', function(e) {
+      if (!dragClone) return;
+      e.preventDefault();
+      moveDragClone({ clientX: e.touches[0].clientX, clientY: e.touches[0].clientY });
+    }, { passive: false });
+
+    // Click cup → steep; click anywhere else → put bag back
+    cupWrap.addEventListener('click', function(e) {
+      if (!activeBag || !dragClone) return;
+      e.stopPropagation();
+      var rect = cupWrap.getBoundingClientRect();
+      var cx = rect.left + rect.width / 2;
+      var cy = rect.top  + rect.height / 2;
+      if (isOverCup(cx, cy)) {
+        var bag = activeBag;
+        var clone = dragClone;
+        activeBag = null;
+        dragClone = null;
+        document.body.style.cursor = '';
+        cupDropRing.classList.remove('drop-ready');
+        steepBag(bag, clone);
+      }
+    });
+
+    // Click anywhere else → put bag back
+    document.addEventListener('click', function(e) {
+      if (activeBag && dragClone) putDownBag();
+    });
+  })();
+
+  // ── 3. Fan cards — lay down one by one after lid opens ──
+  var fanCards = document.querySelectorAll('.cards-scatter .fan-card');
+  var cardsDealt = true;
+
+  fanCards.forEach(function(card) {
+    card.classList.add('card-in', 'settled');
+  });
+
+  function dealCards() {}
+
+  // ── 3. Floating work artifacts — viewed through the sunglasses ──
+
+  // Glasses put-on animation — fires once when #work scrolls into view
+  (function() {
+    var overlay  = document.getElementById('glasses-putOn');
+    var workSect = document.getElementById('work');
+    if (!overlay || !workSect) return;
+    var fired = false;
+    var glassesObs = new IntersectionObserver(function(entries) {
+      if (fired) return;
+      if (!entries[0].isIntersecting) return;
+      fired = true;
+      glassesObs.disconnect();
+      overlay.classList.add('is-playing');
+      overlay.addEventListener('animationend', function() {
+        overlay.classList.remove('is-playing');
+        overlay.style.visibility = 'hidden';
+        var workspace = document.getElementById('work-slide-pile');
+        if (workspace) workspace.classList.add('cards-visible');
+      }, { once: true });
+    }, { threshold: 0.2 });
+    glassesObs.observe(workSect);
+  })();
+  var workModal         = document.getElementById('work-modal');
+  var workModalClose    = document.getElementById('work-modal-close');
+  var workModalBackdrop = document.getElementById('work-modal-backdrop');
+  var workSpace         = document.getElementById('work-slide-pile');
+
+  function openWorkModal(id) {
+    var p = projects[id];
+    if (!p || !workModal) return;
+
+    var imagesEl = document.getElementById('work-modal-images');
+    imagesEl.innerHTML = '';
+    var thumbs = p.thumbs && p.thumbs.length ? p.thumbs : [p.hero];
+    thumbs.forEach(function(src) {
+      var img = document.createElement('img');
+      img.src = src;
+      img.alt = p.title || id;
+      img.className = 'work-modal-img loaded';
+      imagesEl.appendChild(img);
+    });
+
+    document.getElementById('work-modal-label').textContent    = p.label    || '';
+    document.getElementById('work-modal-title').textContent    = p.title    || id;
+    document.getElementById('work-modal-problem').textContent  = p.problem  || '';
+    document.getElementById('work-modal-solution').textContent = p.solution || '';
+    document.getElementById('work-modal-outcomes').textContent = p.outcomes || '';
+
+    workModal.setAttribute('aria-hidden', 'false');
+    workModal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeWorkModal() {
+    if (!workModal) return;
+    workModal.classList.remove('is-open');
+    workModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  // Use event delegation on the workspace so it works before/after cards-visible
+  if (workSpace) {
+    workSpace.style.pointerEvents = 'auto';
+    workSpace.addEventListener('click', function(e) {
+      var card = e.target.closest('.work-slide[data-project]');
+      if (card) openWorkModal(card.dataset.project);
+    });
+  }
+
+  if (workModalClose)    workModalClose.addEventListener('click', closeWorkModal);
+  if (workModalBackdrop) workModalBackdrop.addEventListener('click', closeWorkModal);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeWorkModal();
+  });
+
+  // ── 4. Choice pills — stagger in per group ──
+  var pillGroups = document.querySelectorAll('.choices, .section-nav-pills');
+  pillGroups.forEach(function(group) {
+    var pills = group.querySelectorAll('.choice-pill');
+    var pillObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          pills.forEach(function(pill, idx) {
+            setTimeout(function() {
+              pill.classList.add('pill-in');
+            }, idx * 90);
+          });
+          pillObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    pillObs.observe(group);
+  });
+
+  // ── 5. Work detail sections — stagger in when detail panel opens ──
+  // hook into openProject to trigger after content loads
+  var origOpen = window._origOpenProject;
+  var detailSections = document.querySelectorAll('.work-detail-section');
+  function animateDetailSections() {
+    detailSections.forEach(function(s) { s.classList.remove('section-in'); });
+    setTimeout(function() {
+      detailSections.forEach(function(s, idx) {
+        setTimeout(function() {
+          s.classList.add('section-in');
+        }, 400 + idx * 100);
+      });
+    }, 50);
+  }
+
+  // patch the close button to reset detail section classes
+  var closeBtn = document.getElementById('work-detail-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function() {
+      detailSections.forEach(function(s) { s.classList.remove('section-in'); });
+    });
+  }
+
+  // observe the detail content for display changes
+  var detailContent = document.getElementById('work-detail-content');
+  if (detailContent) {
+    var detailObs = new MutationObserver(function(mutations) {
+      mutations.forEach(function(m) {
+        if (m.type === 'attributes' && m.attributeName === 'style') {
+          if (detailContent.style.display !== 'none') {
+            animateDetailSections();
+          }
+        }
+      });
+    });
+    detailObs.observe(detailContent, { attributes: true });
+  }
+
+  // ── 6. Section nav pills re-observe when back button clicked ──
+  // (pills already done above via group observer — no extra work needed)
+
+  // ── 7. Box lid scroll animation ──
+  // The scroller is 300vh tall. The inner section is sticky.
+  // Progress 0→1 maps from "scroller top hits viewport top" to "scroller bottom hits viewport bottom".
+  // Lid stays closed until ~40% progress, then swings open over the next 50%, then content fades in.
+
+  var scroller    = document.getElementById('box-open-scroller');
+  var cardsSection = document.getElementById('hero-cards-section');
+  var lidLeft     = document.getElementById('lid-panel-left');
+  var lidRight    = document.getElementById('lid-panel-right');
+  var lidGlow     = document.getElementById('lid-glow');
+  var scrollHint  = document.getElementById('box-scroll-hint');
+
+  if (scroller && cardsSection && lidLeft && lidRight) {
+
+    function easeInOut(t) {
+      return t < 0.5 ? 2*t*t : 1 - Math.pow(-2*t+2,2)/2;
+    }
+
+    function updateLid() {
+      var scrollerRect = scroller.getBoundingClientRect();
+      var scrollerH    = scroller.offsetHeight;
+      var vh           = window.innerHeight;
+
+      // How far through the scroller are we? 0 = just arrived, 1 = scroller bottom at viewport bottom
+      var scrolled = -scrollerRect.top;                    // px scrolled past top of scroller
+      var total    = scrollerH - vh;                       // total scrollable distance
+      var raw      = Math.max(0, Math.min(1, scrolled / total));
+
+      // Phase 1: 0 – 0.35  → lid fully closed, nothing moves
+      // Phase 2: 0.35 – 0.85 → lid swings open
+      // Phase 3: 0.85 – 1   → content fades in
+      var openStart = 0.35, openEnd = 0.85;
+      var openProgress = Math.max(0, Math.min(1, (raw - openStart) / (openEnd - openStart)));
+      var eased = easeInOut(openProgress);
+
+      // Left panel hinges on left edge and swings away to the left
+      // Right panel hinges on right edge and swings away to the right
+      var angle = 2 + (eased * 88); // start nearly closed at 2deg
+      lidLeft.style.transform  = 'perspective(1200px) rotateY(' + angle + 'deg)';
+      lidRight.style.transform = 'perspective(1200px) rotateY(-' + angle + 'deg)';
+
+      // Glow: fully opaque at rest, fades to zero as the lid opens
+      if (lidGlow) {
+        var glowOpacity = Math.max(0, 1 - eased);
+        lidGlow.style.opacity = glowOpacity.toFixed(3);
+        lidGlow.style.width   = (35 + eased * 30) + '%';
+      }
+
+      // Fade panels out in the latter half of opening
+      var fadeStart = 0.5;
+      var panelOpacity = Math.max(0, 1 - Math.max(0, (eased - fadeStart) / (1 - fadeStart)));
+      lidLeft.style.opacity  = panelOpacity;
+      lidRight.style.opacity = panelOpacity;
+
+      // Fade in card content once lid is mostly open
+      if (openProgress > 0.8) {
+        cardsSection.classList.add('lid-open');
+        dealCards();
+      } else {
+        cardsSection.classList.remove('lid-open');
+      }
+
+      // Hide scroll hint once lid starts opening
+      if (scrollHint) {
+        var hintOpacity = raw < 0.35 ? 1 : Math.max(0, 1 - ((raw - 0.35) / 0.15));
+        scrollHint.style.opacity = hintOpacity.toFixed(3);
+        scrollHint.style.pointerEvents = hintOpacity > 0 ? '' : 'none';
+      }
+    }
+
+    window.addEventListener('scroll', updateLid, { passive: true });
+    updateLid(); // run once on load
+  }
+
+})();
+
+  // ── Contact book ──
+  var bookWrap        = document.getElementById('contact-book-wrap');
+  var bookCover       = document.getElementById('book-cover');
+  var bookChoicePage  = document.getElementById('book-choice-page');
+  var bookFormPage    = document.getElementById('book-form-page');
+  var bookSuccessPage = document.getElementById('book-success-page');
+  var bookPlaneLabel  = document.getElementById('book-plane-label');
+  var airplaneOverlay = document.getElementById('airplane-overlay');
+  var contactClickoff = document.getElementById('contact-clickoff');
+  var planeNames      = { dart:'Flying a Dart', glider:'Flying a Glider', hunter:'Flying a Hunter' };
+
+  function showPanel(panel) {
+    [bookChoicePage, bookFormPage, bookSuccessPage].forEach(function(p) {
+      if (p) p.style.display = 'none';
+    });
+    if (panel) panel.style.display = 'flex';
+  }
+
+  if (bookCover) {
+    bookCover.addEventListener('click', function() {
+      if (bookWrap && !bookWrap.classList.contains('book-open')) {
+        bookWrap.classList.add('book-open');
+        showPanel(bookChoicePage);
+        if (contactClickoff) contactClickoff.style.display = 'block';
+      }
+    });
+  }
+
+  if (contactClickoff) {
+    contactClickoff.addEventListener('click', function() {
+      if (bookWrap) bookWrap.classList.remove('book-open');
+      contactClickoff.style.display = 'none';
+      showPanel(bookChoicePage);
+      document.querySelectorAll('.paper-sheet').forEach(function(s) { s.classList.remove('sheet-active'); });
+    });
+  }
+
+  window.choosePlane = function(type) {
+    if (bookPlaneLabel) bookPlaneLabel.textContent = planeNames[type] || 'Flying';
+    showPanel(bookFormPage);
+    document.querySelectorAll('.paper-sheet').forEach(function(s) {
+      s.classList.toggle('sheet-active', s.dataset.plane === type);
+    });
+  };
+
+  window.showChoicePage = function() {
+    showPanel(bookChoicePage);
+    document.querySelectorAll('.paper-sheet').forEach(function(s) { s.classList.remove('sheet-active'); });
+  };
+
+  window.highlightDiagram = function(plane) {
+    ['dart','glider','hunter'].forEach(function(p) {
+      var el = document.getElementById('diag-' + p);
+      if (el) el.classList.toggle('diag-active', p === plane);
+    });
+  };
+
+  window.wingIt = function() {
+    if (airplaneOverlay) { airplaneOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
+  };
+
+  window.launchPlane = function() {
+    var email = document.getElementById('bf-email');
+    if (!email || !email.value.includes('@')) { if (email) email.focus(); return; }
+    showPanel(bookSuccessPage);
+  };
+
+  var airplaneBack = document.getElementById('airplane-back');
+  if (airplaneBack) {
+    airplaneBack.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (airplaneOverlay) airplaneOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
+</script>
+
+<!-- ── WORK PROJECT MODAL ── -->
+<div id="work-modal" class="work-modal" aria-modal="true" role="dialog" aria-hidden="true">
+  <div class="work-modal-backdrop" id="work-modal-backdrop"></div>
+  <div class="work-modal-panel">
+    <button class="work-modal-close" id="work-modal-close" aria-label="Close">✕</button>
+    <div class="work-modal-images" id="work-modal-images"></div>
+    <div class="work-modal-body">
+      <p class="work-modal-label" id="work-modal-label"></p>
+      <h2 class="work-modal-title" id="work-modal-title"></h2>
+      <p class="work-modal-desc" id="work-modal-desc"></p>
+      <div class="work-modal-sections">
+        <div class="work-modal-section">
+          <h4>Problem</h4>
+          <p id="work-modal-problem"></p>
+        </div>
+        <div class="work-modal-section">
+          <h4>Solution</h4>
+          <p id="work-modal-solution"></p>
+        </div>
+        <div class="work-modal-section">
+          <h4>Outcomes</h4>
+          <p id="work-modal-outcomes"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
